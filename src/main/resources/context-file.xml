@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pudge" class="com.vtlions.spring2.Pudge">
+
+		<constructor-arg name="name" value="Pudge" />
+		<constructor-arg name="level" value="18" />
+		<constructor-arg name="item" ref="item2" />
+
+	</bean>
+
+	
+	<bean id="item2" class="com.vtlions.spring2.Item">
+		<constructor-arg name="nameOfItem" value="Boots of travel" />
+	</bean>
+
+</beans>
