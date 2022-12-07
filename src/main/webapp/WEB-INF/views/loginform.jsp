@@ -1,5 +1,5 @@
 
-<%@ include file="header.jsp" %>
+<!-- %@ include file="header.jsp" % -->
     <center><form action='login' method='post'>
     <table border='0'>
        <tr>
@@ -17,4 +17,4 @@
     <br>
     ${loginMessage}
     </center>
-<%@ include file="footer.jsp" %>
+<!-- %@ include file="footer.jsp" % -->
