@@ -1,0 +1,11 @@
+<form action="${pageContext.request.contextPath}/cart/add" method="post" >
+    <input type="hidden" name="id" value="${product.id}" />
+    <input type="button" value='-' onClick="changeCount(${product.id}, -1)"/>
+    <input type="number" name="count" id="items_count${product.id}" value="1" min="1" style="width: 4em"/>
+    <input type="button" value='+' onClick="changeCount(${product.id}, +1)"/>
+    <!-- input type="submit" value='Buy' / -->
+     <input type="button" value="Buy" onclick="buy(${product.id})" />
+     <input type="button" value="Buy" onclick="buy2(${product.id})" />
+</form>
+
+
